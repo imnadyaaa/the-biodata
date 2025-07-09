@@ -9,15 +9,16 @@ body {
 
 :root{
     --main-color: #ffffff;
-    --second-color: #f0c9aa;
-    --third-color:  #F4E7E1;
-    --fuorth-color:  #F0E4D3;
+    --first-color: #b46a73;
+    --second-color: #f4c2c2;
+    --third-color: #BC8F8F;
+    --fuorth-color:   #db7e94 ;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--main-color);
+    background-color: var(--first-color);
     padding: 25px;
     align-items: center;
     position: sticky;
@@ -31,7 +32,7 @@ nav a {
 }
 
 nav a:hover{
-    color: rgb(0, 0, 0);
+    color: var(--main-color);
 }
 
 .myprofile {
@@ -53,7 +54,7 @@ nav a:hover{
 .konten-profile .teks{
     background-color: var(--main-color);
     padding: 3em;
-    box-shadow: -10px 10px 0 var(--third-color);
+    box-shadow: -10px 10px 0 var(--first-color);
 }
 
 .konten-profile p {
@@ -96,6 +97,11 @@ button:nth-of-type(2):hover {
     color: black;
 }
 
+main{
+     background-color: var(--second-color);
+
+}
+
 .content {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -136,20 +142,20 @@ main h2{
 
 footer{
     display: flex;
-  flex: 1;
-  padding: 40px;
-  gap: 40px;
-  flex-wrap: wrap;
-  background-color: var(--second-color);
+    flex: 1;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: var(--second-color);
 
 }
 
 .footer-atas {
     flex: 1;
-  min-width: 280px;
-  padding: 20px;
-  font-size: 2rem;
-  line-height: 3rem;
+    padding: 10px;
+    font-size: 2em;
+    line-height: 1.6em;
+    font-weight: bold;
 
 }
 
@@ -184,15 +190,17 @@ textarea {
   resize: vertical;
 }
 
-button {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+.form button {
+  background-color: var(--third-color);
+  color: #888;
+  border: 2px solid #888;
   padding: 12px;
+  width: 120px;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 4px;
+  margin-left: 380px;
 }
 
 button:hover {
@@ -200,7 +208,7 @@ button:hover {
 }
 
 .bawah {
-    background-color: #D2C1B6;
+    background-color: var(--first-color);
   color: white;
   text-align: center;
   padding: 20px;
@@ -277,18 +285,11 @@ button:hover {
     }
 
     .footer-atas {
-        display: flex;
+       flex-direction: column;
         text-align: center;
+
       }
 
-    input, textarea {
-        display: flex;
-       justify-content: center;
-      }
-
-    button {
-        justify-content: center;
-      }
 
 
 }
